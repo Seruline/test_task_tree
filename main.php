@@ -35,7 +35,6 @@ $category = getCategory($db);
     function ajax(buttonAj) {
         for (let i = 0; i < buttonAj.length; i++) {
             buttonAj[i].addEventListener("click", function() {
-                console.log(buttonAj[i].value);
                 $.ajax({
                     type: "POST",
                     url: "query.php",
